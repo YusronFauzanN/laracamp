@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use App\Models\CampBenefit;
 class CampBenefitSeeder extends Seeder
 {
     /**
@@ -13,6 +13,53 @@ class CampBenefitSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $campBenefits = [
+            [
+                'camp_id' => '1',
+                'name' => 'Pro Techstack Kit'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'iMac Pro 2021 & Display'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => '1-1 Mentoring Program'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'Final Project Certificate'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'Offline Course Vidio'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'Future Job Opportinity'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'Premium Design Kit'
+            ],
+            [
+                'camp_id' => '1',
+                'name' => 'Website Builder'
+            ],
+            [
+                'camp_id' => '2',
+                'name' => '1-1 Mentoring Program'
+            ],
+            [
+                'camp_id' => '2',
+                'name' => 'Final Project Certificate'
+            ],
+            [
+                'camp_id' => '2',
+                'name' => 'Offline Course Videos'
+            ],
+        ];
+
+        CampBenefit::insert($campBenefits);
     }
 }
