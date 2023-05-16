@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\CampBenefit;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,11 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(2)->create();
+        // \App\Models\User::factory(10)->create();
         $this->call([
-            CampSeeder::class,
-            CampBenefitSeeder::class,
-            AdminSeeder::class
+            CampTableSeeder::class,
+            CampBenefitTableSeeder::class,
+            AdminUserSeeder::class,
         ]);
     }
 }
